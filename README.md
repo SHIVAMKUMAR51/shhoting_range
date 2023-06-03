@@ -1,1 +1,1 @@
-# shhoting_range
+# shooting_range
