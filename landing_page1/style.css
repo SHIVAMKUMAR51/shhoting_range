@@ -1,0 +1,107 @@
+@import url('https://fonts.cdnfonts.com/css/baron-neue');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400;500&family=Roboto:ital@1&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(bg.jpg) top center / cover;
+    font-family: 'Baron Neue', sans-serif;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    /* width: 5rem;  */
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+header nav{
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: palevioletred;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition:.3s ease-in-out;
+    border: 1px solid transparent;
+}
+header nav a:hover , .active{
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    
+}
+section{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    padding: 10% 5%;
+}
+section .content h1{
+    font-size: 5rem;
+    width: 50%;
+    text-transform: uppercase;
+    color: blanchedalmond;
+}
+section .content h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    margin-block: 1.5rem;
+    text-transform: capitalize;
+    color: 8rgb(15, 94, 241);
+}
+section .content .btn{
+color: black;
+background: linear-gradient(45deg, red, pink);
+border: none;
+margin-top: 2rem;
+font-size: 1.1rem;
+cursor: pointer;
+transition: .3s ease-in-out;
+padding: .6rem 1.5rem;
+border-radius: 100vw;
+}
+section .content .btn:hover{
+    background: linear-gradient(200deg, red, pink);
+}
+.socialicon{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    button: 2rem;
+    right: 0%;
+}
+.socialicon ion-icon{
+    background: red;
+    columns: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    padding: .3rem;
+    
+}
+
+.socialicon ion-icon:hover{
+    background:white;
+    color: red;
+}
